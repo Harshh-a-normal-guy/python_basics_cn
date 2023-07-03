@@ -1,0 +1,18 @@
+def sum_of_n_number():
+    n= int(input())
+    arr =list(map(int,input().split()))
+    sum=0
+    natural_sum= ((n-1)*(n-2))//2
+    for i in range(n):
+        sum+=arr[i]
+    # print(sum)
+    # print(natural_sum)
+    return (sum-natural_sum)
+    
+# n= int(input())
+# arr = [0 ,2 ,1 ,3 ,1]
+
+print(sum_of_n_number())
+
+
+#approach : to find the duplicate we take the sum of natural no(N) and we take the sum of array . Then we find the difference btw (sum-sum_of_natural_no) . 
