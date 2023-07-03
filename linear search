@@ -1,0 +1,16 @@
+# linear search
+n = int(input())
+arr= list(map(int,input().split()))
+x= int(input())
+# Element_search = int(input())
+def ls(arr,n,x):
+    loc=-1
+    i=0
+    while i<=n and arr[i] != x:
+        i+=1
+    if arr[i]== x:
+        loc= i
+    print("location":,i)
+
+ls(arr,n,x)
+    
