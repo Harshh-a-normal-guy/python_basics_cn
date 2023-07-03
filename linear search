@@ -1,4 +1,4 @@
-# linear search
+# linear search using while loop
 n = int(input())
 arr= list(map(int,input().split()))
 x= int(input())
@@ -14,3 +14,16 @@ def ls(arr,n,x):
 
 ls(arr,n,x)
     
+######################################################################
+# linear search using for loop
+n = int(input())
+arr= list(map(int,input().split()))
+x= int(input())
+def ls(arr,n,x):
+    loc=-1
+    for i in range(n):
+        if arr[i]==x:
+            loc=i
+            print("location:",i)
+
+ls(arr,n,x)
