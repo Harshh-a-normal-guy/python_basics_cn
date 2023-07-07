@@ -1,0 +1,17 @@
+# Read input as sepcified in the question
+# Print output as specified in the question
+# using slicing
+n= input()
+n2= n[::-1]
+if n==n2:
+    print('true')
+else:
+    print('false')
+# using loops
+# out=''
+# for i in range(1,len(n)+1):
+#     out+=n[len(n)-i]
+# if out==n:
+#     print('true')
+# else:
+#     print('false')
