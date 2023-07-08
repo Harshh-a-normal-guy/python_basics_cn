@@ -1,0 +1,25 @@
+def reverseEachWord(string):
+	
+
+
+    new_str=''
+    for i in range(len(string)):
+        string[i]=string[i][::-1]
+        new_str+=string[i]+' '
+# print(new_str,end= '')
+    return new_str
+
+
+
+
+
+
+#main
+# string = stdin.readline().strip()
+string= input().split(' ')
+ans = reverseEachWord(string)
+
+print(ans)
+
+##output 
+'Welcome to Coding' = 'emocleW ot gnidoC' 
