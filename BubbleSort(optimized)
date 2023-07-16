@@ -1,0 +1,9 @@
+def bubbleSort(arr):
+    for i in range(len(arr)-1):
+        for j in range(len(arr)-1-i):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+    return arr
+arr=[8,5,3,1]
+print(bubbleSort(arr))
+# it in j we iterate len-1-i Times as the no of iteration we need is n-1,n-2,n-3... so on.
