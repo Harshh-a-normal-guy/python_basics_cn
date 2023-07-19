@@ -1,0 +1,16 @@
+max_size = -1000000000
+min_size = 14121147454
+max_diff = -1545211202
+arr = [100, 113, 110, 85, 105, 102, 86, 63, 81, 101, 94, 106, 101, 79, 94, 90, 97]
+
+for i in range(len(arr)):
+    for j in range(i + 1, len(arr)):
+        # print(i,arr[i],'\t',j,arr[j])# Start from i+1 instead of 1
+        if arr[i] - arr[j] > max_diff:
+            max_diff = arr[i] - arr[j]
+            # print(arr[i],arr[j])
+            # print("Difference is", i, j, end=' ')
+            # print(max_diff)
+        # print()
+
+print(max_diff)
